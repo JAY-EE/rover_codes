@@ -1,0 +1,34 @@
+[1.041s] Invoking command in '/home/jay/IRC_2026/build/web_ui': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jay/IRC_2026/build/web_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jay/IRC_2026/install/web_ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jay/IRC_2026/build/web_ui/build --no-deps symlink_data
+[1.339s] running develop
+[1.552s] running egg_info
+[1.552s] creating web_ui.egg-info
+[1.573s] writing web_ui.egg-info/PKG-INFO
+[1.573s] writing dependency_links to web_ui.egg-info/dependency_links.txt
+[1.573s] writing entry points to web_ui.egg-info/entry_points.txt
+[1.573s] writing requirements to web_ui.egg-info/requires.txt
+[1.573s] writing top-level names to web_ui.egg-info/top_level.txt
+[1.574s] writing manifest file 'web_ui.egg-info/SOURCES.txt'
+[1.614s] reading manifest file 'web_ui.egg-info/SOURCES.txt'
+[1.615s] writing manifest file 'web_ui.egg-info/SOURCES.txt'
+[1.636s] running build_ext
+[1.636s] Creating /home/jay/IRC_2026/install/web_ui/lib/python3.12/site-packages/web-ui.egg-link (link to .)
+[1.636s] Installing web_ui_server script to /home/jay/IRC_2026/install/web_ui/lib/web_ui
+[1.637s] 
+[1.637s] Installed /home/jay/IRC_2026/build/web_ui
+[1.637s] running symlink_data
+[1.637s] creating /home/jay/IRC_2026/install/web_ui/share/ament_index
+[1.637s] creating /home/jay/IRC_2026/install/web_ui/share/ament_index/resource_index
+[1.637s] creating /home/jay/IRC_2026/install/web_ui/share/ament_index/resource_index/packages
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/resource/web_ui -> /home/jay/IRC_2026/install/web_ui/share/ament_index/resource_index/packages
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/package.xml -> /home/jay/IRC_2026/install/web_ui/share/web_ui
+[1.638s] creating /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/web_ui/www/favicon_1.svg -> /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/web_ui/www/favicon.svg -> /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/web_ui/www/style.css -> /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/web_ui/www/index.html -> /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/web_ui/www/config/topics.json -> /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/web_ui/www/config/topics_real.json -> /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/web_ui/www/js/app.js -> /home/jay/IRC_2026/install/web_ui/share/web_ui/www
+[1.638s] creating /home/jay/IRC_2026/install/web_ui/share/web_ui/launch
+[1.638s] symbolically linking /home/jay/IRC_2026/build/web_ui/launch/web_ui.launch.py -> /home/jay/IRC_2026/install/web_ui/share/web_ui/launch
+[1.661s] Invoked command in '/home/jay/IRC_2026/build/web_ui' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jay/IRC_2026/build/web_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jay/IRC_2026/install/web_ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jay/IRC_2026/build/web_ui/build --no-deps symlink_data

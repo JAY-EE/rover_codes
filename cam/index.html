@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Low Latency WebRTC Stream</title>
+</head>
+<body>
+  <h2>WebRTC Stream</h2>
+  <video id="video" autoplay playsinline style="width:640px;height:480px;border:1px solid black;"></video>
+
+  <script>
+    const ws = new WebSocket("ws://localhost:8080");  // must match server
+    const pc = new RTCPeerConnection();
+
+    pc.ontrack = (event) => {
+      document.getElementById("video").srcObject = event.streams[0];
+    };
+
+    pc.onicecandidate = (event) => {
+      if (event.candidate) {
+        ws.send(JSON.stringify({ type: "candidate", candidate: event.candidate }));
+      }
+    };
+
+    ws.onmessage = async (message) => {
+      const data = JSON.parse(message.data);
+
+      if (data.type === "offer") {
+        await pc.setRemoteDescription(new RTCSessionDescription(data));
+        const answer = await pc.createAnswer();
+        await pc.setLocalDescription(answer);
+        ws.send(JSON.stringify(pc.localDescription));
+      } else if (data.type === "answer") {
+        await pc.setRemoteDescription(new RTCSessionDescription(data));
+      } else if (data.type === "candidate") {
+        await pc.addIceCandidate(new RTCIceCandidate(data.candidate));
+      }
+    };
+  </script>
+</body>
+</html>
