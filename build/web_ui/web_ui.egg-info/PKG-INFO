@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: web-ui
-Version: 0.0.0
-Summary: Custom Web-based UI for ROS2 rover control and monitoring with direct ROS2 communication
-Maintainer: bab
-Maintainer-email: abdallah.elsaid25@gmail.com
-License: MIT

@@ -1,6 +1,0 @@
-cv-bridge
-flask
-flask-socketio
-numpy
-opencv-python
-setuptools

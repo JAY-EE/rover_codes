@@ -1,2 +1,0 @@
-[console_scripts]
-web_ui_server = web_ui.web_server:main
